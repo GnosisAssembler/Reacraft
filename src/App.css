@@ -8,11 +8,13 @@ html, body {
     background-image: url('./img/minecraft-background.jpg');
     background-repeat: repeat;
     background-position: center;
-    text-align: center;
     color: white;
+    padding: 10px;
 }
 
 .App h1 {
     padding-top: 35px;
     margin-top: 0;
+    margin-bottom: 50px;
+    text-align: center;
 }

@@ -42,16 +42,19 @@ class App extends Component {
       <div className="App">
         <h1>Crafting Guide</h1>
 
+        <div>
+          <Minerals mineralMain={this.state.main} mineralSecondary={this.state.secondary}/>
+        </div>
+
         <h3>Building</h3>
 
         <h5>Minerals</h5>
-        <img src={goldBlock} alt="gold" width="25px;" onClick={this.onMineral.bind(this)} id="gold"/>
-        <img src={ironBlock} alt="iron" width="25px;" onClick={this.onMineral.bind(this)} id="iron"/>
-        <img src={diamondBlock} alt="iron" width="25px;" onClick={this.onMineral.bind(this)} id="diamond"/>
-        <img src={emeraldBlock} alt="iron" width="25px;" onClick={this.onMineral.bind(this)} id="emerald"/>
-        <img src={lapisBlock} alt="iron" width="25px;" onClick={this.onMineral.bind(this)} id="lapis"/>
+        <img src={goldBlock} alt="gold-block" width="36px;" onClick={this.onMineral.bind(this)} id="gold"/>
+        <img src={ironBlock} alt="iron-block" width="36px;" onClick={this.onMineral.bind(this)} id="iron"/>
+        <img src={diamondBlock} alt="diamond-block" width="36px;" onClick={this.onMineral.bind(this)} id="diamond"/>
+        <img src={emeraldBlock} alt="emerald-block" width="36px;" onClick={this.onMineral.bind(this)} id="emerald"/>
+        <img src={lapisBlock} alt="lapis-block" width="36px;" onClick={this.onMineral.bind(this)} id="lapis"/>
       
-        <Minerals mineralMain={this.state.main} mineralSecondary={this.state.secondary}/>
       </div>
     );
   }
