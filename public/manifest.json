@@ -1,6 +1,6 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "Crafting Guide",
+  "name": "Minecraft crafting guide",
   "icons": [
     {
       "src": "favicon.ico",
