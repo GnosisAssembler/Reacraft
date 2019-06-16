@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import '../../css/Minerals.css';
 
 class Minerals extends Component {
-    
     render() {
         return (
         <div className="Minerals">

@@ -1,3 +1,4 @@
+// Import block and ingot images
 import goldBlock from '../assets/building/minerals/150px-Block_of_Gold.png';
 import goldIngot from '../assets/materials/150px-Gold_Ingot.png';
 import ironBlock from '../assets/building/minerals/150px-Block_of_Iron.png';
@@ -9,6 +10,10 @@ import emeraldIngot from '../assets/materials/150px-Emerald.png';
 import lapisBlock from '../assets/building/minerals/150px-Lapis_Lazuli_Block.png';
 import lapisIngot from '../assets/materials/150px-Lapis_Lazuli.png';
 
+/**
+ * Check the block
+ * @param eventMineral: String (the id of the clicked image)
+ */
 export function mineralCheckBlock(eventMineral) {
 
     if (eventMineral==="gold") {
@@ -24,6 +29,10 @@ export function mineralCheckBlock(eventMineral) {
     }
 }
 
+/**
+ * Check the ingot
+ * @param eventMineral: String (the id of the clicked image)
+ */
 export function mineralCheckIngot(eventMineral) {
 
     if (eventMineral==="gold") {
