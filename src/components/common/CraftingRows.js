@@ -8,19 +8,19 @@ class CraftingRows extends Component {
         <div className="CraftingRows">
             <table>
                 <tr>
-                    <td>{this.props.input}</td>
-                    <td>{this.props.input}</td>
-                    <td>{this.props.input}</td>
+                    <td>{this.props.input1}</td>
+                    <td>{this.props.input2}</td>
+                    <td>{this.props.input3}</td>
                 </tr>
                 <tr>
-                    <td>{this.props.input}</td>
-                    <td>{this.props.input}</td>
-                    <td>{this.props.input}</td>
+                    <td>{this.props.input4}</td>
+                    <td>{this.props.input5}</td>
+                    <td>{this.props.input6}</td>
                 </tr>
                 <tr>
-                    <td>{this.props.input}</td>
-                    <td>{this.props.input}</td>
-                    <td>{this.props.input}</td>
+                    <td>{this.props.input7}</td>
+                    <td>{this.props.input8}</td>
+                    <td>{this.props.input9}</td>
                 </tr>
             </table>
 

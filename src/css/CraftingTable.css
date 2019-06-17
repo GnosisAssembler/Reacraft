@@ -1,11 +1,11 @@
-.Minerals {
+.CraftingTable {
     height: 160px;
     display: flex;
     flex-direction: row;
     justify-content: center;
 }
 
-.Minerals ul {
+.CraftingTable ul {
     list-style: none;
 }
 
