@@ -1,4 +1,4 @@
-// Import block and ingot images
+// Import block and material images
 import stoneBrickBlock from '../assets/building/stone/150px-Stone_Bricks.png';
 import mossyStoneBlock from '../assets/building/stone/150px-Mossy_Stone_Bricks.png';
 import mossyCobbleBlock from '../assets/building/stone/150px-Mossy_Cobblestone.png';
@@ -8,22 +8,22 @@ import smoothStone from '../assets/building/stone/150px-Stone.png'
 import cobbleStone from '../assets/building/stone/150px-Cobblestone.png';
 import vines from '../assets/miscellaneous/150px-Vines.png';
 import stoneBrickSlabs from '../assets/building/slabs/150px-Stone_Brick_Slab.png';
+import emptyBlock from '../img/150px-Empty-Block.png';
 
 /**
- * Check the block
+ * Create stone recipes
  * @param itemPressed: String (the id of the clicked image)
- * @return_values *: Objects(images, - first the recipe items, 
-*            then the output, then the position of the output)
+ * @return array[recipe-item,...,result-item]
  */
 export function stoneCheck(itemPressed) {
 
-    if (itemPressed==="stoneBrick") {
-        return [smoothStone, stoneBrickBlock, 1];
-    } else if(itemPressed==="mossyStone") {
-        return [stoneBrickBlock, vines, mossyStoneBlock, 2];
-    } else if(itemPressed==="mossyCobble") {
-        return [cobbleStone, vines, mossyCobbleBlock, 2];
+    if (itemPressed==="2-stoneBrick") {
+        return [smoothStone, smoothStone, emptyBlock, smoothStone, smoothStone, emptyBlock, emptyBlock, emptyBlock, emptyBlock, stoneBrickBlock];
+    } else if(itemPressed==="2-mossyStone") {
+        return [emptyBlock, emptyBlock, emptyBlock, stoneBrickBlock, vines, emptyBlock, emptyBlock, emptyBlock, emptyBlock, mossyStoneBlock];
+    } else if(itemPressed==="2-mossyCobble") {
+        return [emptyBlock, emptyBlock, emptyBlock, cobbleStone, vines, emptyBlock, emptyBlock, emptyBlock, emptyBlock, mossyCobbleBlock];
     } else  {
-        return [stoneBrickSlabs, chiseledStoneBlock, 1];
+        return [emptyBlock, emptyBlock, emptyBlock, emptyBlock, stoneBrickSlabs, emptyBlock, emptyBlock, stoneBrickSlabs, emptyBlock, chiseledStoneBlock, 1];
     }
 }

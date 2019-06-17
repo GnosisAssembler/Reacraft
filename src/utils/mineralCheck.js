@@ -11,21 +11,21 @@ import emeraldIngot from '../assets/materials/150px-Emerald.png';
 import lapisIngot from '../assets/materials/150px-Lapis_Lazuli.png';
 
 /**
- * Check the block
+ * Create mineral recipes
  * @param itemPressed: String (the id of the clicked image)
- * @return_values *: Objects(images, - first the recipe items, then the output)
+ * @return array[recipe-item,...,result-item]
  */
 export function mineralCheck(itemPressed) {
 
-    if (itemPressed==="gold") {
-        return [goldIngot, goldBlock];
-    } else if(itemPressed==="iron") {
-        return [ironIngot, ironBlock];
-    } else if(itemPressed==="diamond") {
-        return [diamondIngot, diamondBlock];
-    } else if(itemPressed==="emerald") {
-        return [emeraldIngot, emeraldBlock];
+    if (itemPressed==="1-gold") {
+        return [goldIngot, goldIngot, goldIngot, goldIngot, goldIngot, goldIngot, goldIngot, goldIngot, goldIngot,  goldBlock];
+    } else if(itemPressed==="1-iron") {
+        return [ironIngot, ironIngot, ironIngot, ironIngot, ironIngot, ironIngot, ironIngot, ironIngot, ironIngot, ironBlock];
+    } else if(itemPressed==="1-diamond") {
+        return [diamondIngot, diamondIngot, diamondIngot, diamondIngot, diamondIngot, diamondIngot, diamondIngot, diamondIngot, diamondIngot, diamondBlock];
+    } else if(itemPressed==="1-emerald") {
+        return [emeraldIngot, emeraldIngot, emeraldIngot, emeraldIngot, emeraldIngot, emeraldIngot, emeraldIngot, emeraldIngot, emeraldIngot, emeraldBlock];
     } else  {
-        return [lapisIngot, lapisBlock];
+        return [lapisIngot, lapisIngot, lapisIngot, lapisIngot, lapisIngot, lapisIngot, lapisIngot, lapisIngot, lapisIngot, lapisBlock];
     }
 }
