@@ -80,6 +80,16 @@ class App extends Component {
   }
   
   render() {
+
+    // Check if the state is full and pass it as a prop to CraftingTable
+    // for conditional rendering
+    let isStateFull = false;
+    if (this.state.item1==="") {
+      isStateFull = false;
+    } else {
+      isStateFull = true;
+    }
+
     return (
       <div className="App">
         <h1>Crafting Guide</h1>
@@ -96,6 +106,7 @@ class App extends Component {
             eighthMaterial={this.state.item8}
             ninthMaterial={this.state.item9}
             resultMaterial={this.state.result}
+            isStateFull={isStateFull}
           />
         </div>
 
