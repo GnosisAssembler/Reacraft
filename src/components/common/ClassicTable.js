@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
-import '../../css/CraftingRows.css';
+import '../../css/ClassicTable.css';
 import arrow from '../../img/arrow.JPG';
 
-class CraftingRows extends Component {
+class ClassicTable extends Component {
     render() {
         return (
-        <div className="CraftingRows">
+        <div className="ClassicTable">
             <table>
                 <tr>
                     <td>{this.props.input1}</td>
@@ -35,4 +35,4 @@ class CraftingRows extends Component {
 
 }
 
-export default CraftingRows;
+export default ClassicTable;

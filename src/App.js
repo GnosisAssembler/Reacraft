@@ -19,11 +19,13 @@ import CraftingTable from './components/common/CraftingTable';
 // Import utils
 import { mineralCheck } from './utils/mineralCheck';
 import { stoneCheck } from './utils/stoneCheck';
+import { furnaceCheck } from './utils/furnaceCheck';
 
 class App extends Component {
   constructor(props) {
     super(props);
     // 10 items - 9 for the crafting slots and 1 for the result
+    // isFurnace: if the item crafted needs a furnace or not
     this.state = { 
         item1: "",
         item2: "",
@@ -34,7 +36,8 @@ class App extends Component {
         item7: "",
         item8: "",
         item9: "",
-        result: "" 
+        result: "" ,
+        isFurnace: false
     };
   }
 
@@ -45,7 +48,7 @@ class App extends Component {
     // Check for item categories
     if(id.substring(0,1)==="1") {
       // call mineralCheck
-      const check = mineralCheck(id)
+      const check = mineralCheck(id);
       // Set state
       this.setState({
         item1: check[0],
@@ -57,11 +60,12 @@ class App extends Component {
         item7: check[6],
         item8: check[7],
         item9: check[8],
-        result: check[9] 
+        result: check[9], 
+        isFurnace: false
       });
     } else if(id.substring(0,1)==="2") {
       // call stoneCheck
-      const check = stoneCheck(id)
+      const check = stoneCheck(id);
       // Set state
       this.setState({
         item1: check[0],
@@ -73,7 +77,18 @@ class App extends Component {
         item7: check[6],
         item8: check[7],
         item9: check[8],
-        result: check[9] 
+        result: check[9],
+        isFurnace: false
+      });
+    } else if (id.substring(0,1)==="f") {
+      // call furnaceCheck
+      const check = furnaceCheck(id);
+      // Set state
+      this.setState({
+        item1: check[0],
+        item2: check[1],
+        result: check[2], 
+        isFurnace: true
       });
     }
     
@@ -107,6 +122,7 @@ class App extends Component {
             ninthMaterial={this.state.item9}
             resultMaterial={this.state.result}
             isStateFull={isStateFull}
+            isFurnace={this.state.isFurnace}
           />
         </div>
 
@@ -125,7 +141,7 @@ class App extends Component {
         <img src={mossyStoneBlock} alt="mossyStone" width="36px;" onClick={this.handleRecipe.bind(this)} id="2-mossyStone"/>
         <img src={mossyCobbleBlock} alt="mossyCobble" width="36px;" onClick={this.handleRecipe.bind(this)} id="2-mossyCobble"/>
         <img src={chiseledStoneBlock} alt="chiseledStone" width="36px;" onClick={this.handleRecipe.bind(this)} id="2-chiseledStone"/>
-        <img src={crackedStoneBlock} alt="crackedStone" width="36px;" onClick={this.handleRecipe.bind(this)} id="2-crackedStone"/>
+        <img src={crackedStoneBlock} alt="crackedStone" width="36px;" onClick={this.handleRecipe.bind(this)} id="f-crackedStone"/>
       
       </div>
     );
