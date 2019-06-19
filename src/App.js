@@ -60,6 +60,9 @@ import { carpetCheck } from './recipes/carpetCheck';
 import { concreteCheck } from './recipes/concreteCheck';
 import { desertCheck } from './recipes/desertCheck';
 
+//? TEST MISC COMPONENT FOR UPDATING STATE FROM THE CHILD
+import Misc from './components/Misc';
+
 class App extends Component {
   constructor(props) {
     super(props);
@@ -180,6 +183,9 @@ class App extends Component {
         result: check[9],
         isFurnace: false
       });
+      //? TEST MISC COMPONENT
+    } else if(id==="test") {
+      console.log("huuuureeeey");
     } 
     
   }
@@ -270,6 +276,11 @@ class App extends Component {
         <img src={chiseledSandstone} alt="chiseledSandstone" width="36px;" onClick={this.handleRecipe.bind(this)} id="5-chiseledSandstone"/>
         <img src={cutSandstone} alt="cutSandstone" width="36px;" onClick={this.handleRecipe.bind(this)} id="5-cutSandstone"/>
         <img src={smoothSandstone} alt="smoothSandstone" width="36px;" onClick={this.handleRecipe.bind(this)} id="5-smoothSandstone"/>
+
+        <h3>TEST MISC COMPONENT</h3>
+        <Misc 
+          handleRecipeChange={this.handleRecipe}
+        />
       
       </div>
     );
