@@ -1,4 +1,6 @@
-// Import block and carpet images
+import React, { Component } from 'react';
+
+// Import assets
 import blackCarpet from '../assets/building/carpets/150px-Black_Carpet.png';
 import blueCarpet from '../assets/building/carpets/150px-Blue_Carpet.png';
 import cyanCarpet from '../assets/building/carpets/150px-Cyan_Carpet.png';
@@ -28,6 +30,29 @@ import redWool from '../assets/building/wools/150px-Red_Wool.png';
 import whiteWool from '../assets/building/wools/150px-White_Wool.png';
 import yellowWool from '../assets/building/wools/150px-Yellow_Wool.png';
 import emptyBlock from '../img/150px-Empty-Block.png';
+
+export default class Carpet extends Component {
+    render() {
+        return (
+            <div>
+                <img src={blackCarpet} alt="blackCarpet" width="36px;" onClick={this.props.handleRecipeChange} id="3-blackCarpet"/>
+                <img src={blueCarpet} alt="blueCarpet" width="36px;" onClick={this.props.handleRecipeChange} id="3-blueCarpet"/>
+                <img src={cyanCarpet} alt="cyanCarpet" width="36px;" onClick={this.props.handleRecipeChange} id="3-cyanCarpet"/>
+                <img src={grayCarpet} alt="grayCarpet" width="36px;" onClick={this.props.handleRecipeChange} id="3-grayCarpet"/>
+                <img src={greenCarpet} alt="greenCarpet" width="36px;" onClick={this.props.handleRecipeChange} id="3-greenCarpet"/>
+                <img src={lightBlueCarpet} alt="lightBlueCarpet" width="36px;" onClick={this.props.handleRecipeChange} id="3-lightBlueCarpet"/>
+                <img src={lightGrayCarpet} alt="lightGrayCarpet" width="36px;" onClick={this.props.handleRecipeChange} id="3-lightGrayCarpet"/>
+                <img src={magentaCarpet} alt="magentaCarpet" width="36px;" onClick={this.props.handleRecipeChange} id="3-magentaCarpet"/>
+                <img src={orangeCarpet} alt="orangeCarpet" width="36px;" onClick={this.props.handleRecipeChange} id="3-orangeCarpet"/>
+                <img src={pinkCarpet} alt="pinkCarpet" width="36px;" onClick={this.props.handleRecipeChange} id="3-pinkCarpet"/>
+                <img src={purpleCarpet} alt="purpleCarpet" width="36px;" onClick={this.props.handleRecipeChange} id="3-purpleCarpet"/>
+                <img src={redCarpet} alt="redCarpet" width="36px;" onClick={this.props.handleRecipeChange} id="3-redCarpet"/>
+                <img src={whiteCarpet} alt="whiteCarpet" width="36px;" onClick={this.props.handleRecipeChange} id="3-whiteCarpet"/>
+                <img src={yellowCarpet} alt="yellowCarpet" width="36px;" onClick={this.props.handleRecipeChange} id="3-yellowCarpet"/>
+            </div>
+        )
+    }
+}
 
 /**
  * Create carpet recipes

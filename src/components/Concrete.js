@@ -1,4 +1,6 @@
-// Import block and material images
+import React, { Component } from 'react'
+
+// Import assets
 import blackConcretePowder from '../assets/building/concrete/150px-Black_Concrete_Powder.png';
 import blueConcretePowder from '../assets/building/concrete/150px-Blue_Concrete_Powder.png';
 import cyanConcretePowder from '../assets/building/concrete/150px-Cyan_Concrete_Powder.png';
@@ -30,6 +32,28 @@ import purpleDye from '../assets/materials/dyes/150px-Purple_Dye.png';
 import brownDye from '../assets/materials/dyes/150px-Brown_Dye.png';
 import yellowDye from '../assets/materials/dyes/150px-Yellow_Dye.png';
 
+export default class Concrete extends Component {
+    render() {
+        return (
+            <div>
+                <img src={blackConcretePowder} alt="blackConcretePowder" width="36px;" onClick={this.props.handleRecipeChange} id="4-blackConcretePowder"/>
+                <img src={blueConcretePowder} alt="blueConcretePowder" width="36px;" onClick={this.props.handleRecipeChange} id="4-blueConcretePowder"/>
+                <img src={cyanConcretePowder} alt="cyanConcretePowder" width="36px;" onClick={this.props.handleRecipeChange} id="4-cyanConcretePowder"/>
+                <img src={grayConcretePowder} alt="grayConcretePowder" width="36px;" onClick={this.props.handleRecipeChange} id="4-grayConcretePowder"/>
+                <img src={limeConcretePowder} alt="limeConcretePowder" width="36px;" onClick={this.props.handleRecipeChange} id="4-limeConcretePowder"/>
+                <img src={lightBlueConcretePowder} alt="lightBlueConcretePowder" width="36px;" onClick={this.props.handleRecipeChange} id="4-lightBlueConcretePowder"/>
+                <img src={lightGrayConcretePowder} alt="lightGrayConcretePowder" width="36px;" onClick={this.props.handleRecipeChange} id="4-lightGrayConcretePowder"/>
+                <img src={magentaConcretePowder} alt="magentaConcretePowder" width="36px;" onClick={this.props.handleRecipeChange} id="4-magentaConcretePowder"/>
+                <img src={orangeConcretePowder} alt="orangeConcretePowder" width="36px;" onClick={this.props.handleRecipeChange} id="4-orangeConcretePowder"/>
+                <img src={pinkConcretePowder} alt="pinkConcretePowder" width="36px;" onClick={this.props.handleRecipeChange} id="4-pinkConcretePowder"/>
+                <img src={purpleConcretePowder} alt="purpleConcretePowder" width="36px;" onClick={this.props.handleRecipeChange} id="4-purpleConcretePowder"/>
+                <img src={redConcretePowder} alt="redConcretePowder" width="36px;" onClick={this.props.handleRecipeChange} id="4-redConcretePowder"/>
+                <img src={brownConcretePowder} alt="brownConcretePowder" width="36px;" onClick={this.props.handleRecipeChange} id="4-brownConcretePowder"/>
+                <img src={yellowConcretePowder} alt="yellowConcretePowder" width="36px;" onClick={this.props.handleRecipeChange} id="4-yellowConcretePowder"/>
+            </div>
+        )
+    }
+}
 
 /**
  * Create concrete recipes
