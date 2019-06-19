@@ -59,6 +59,7 @@ import { furnaceCheck } from './recipes/furnaceCheck';
 import { carpetCheck } from './recipes/carpetCheck';
 import { concreteCheck } from './recipes/concreteCheck';
 import { desertCheck } from './recipes/desertCheck';
+import { miscCheck } from './components/Misc';
 
 //? TEST MISC COMPONENT FOR UPDATING STATE FROM THE CHILD
 import Misc from './components/Misc';
@@ -185,7 +186,25 @@ class App extends Component {
       });
       //? TEST MISC COMPONENT
     } else if(id==="test") {
-      console.log("huuuureeeey");
+       // call miscCheck
+       const check = miscCheck(id);
+
+       console.log(check);
+
+        // Set state
+        this.setState({
+          item1: check[0],
+          item2: check[1],
+          item3: check[2],
+          item4: check[3],
+          item5: check[4],
+          item6: check[5],
+          item7: check[6],
+          item8: check[7],
+          item9: check[8],
+          result: check[9],
+          isFurnace: false
+        });
     } 
     
   }
@@ -279,7 +298,7 @@ class App extends Component {
 
         <h3>TEST MISC COMPONENT</h3>
         <Misc 
-          handleRecipeChange={this.handleRecipe}
+          handleRecipeChange={this.handleRecipe.bind(this)}
         />
       
       </div>
