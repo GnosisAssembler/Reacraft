@@ -5,21 +5,15 @@ import './App.css';
 import CraftingTable from './components/crafting/CraftingTable';
 
 // Import category Components
-import Mineral from './components/building/Mineral';
-import Stone from './components/building/Stone';
-import Carpet from './components/building/Carpet';
-import Concrete from './components/building/Concrete';
-import Desert from './components/building/Desert';
-import Misc from './components/building/Misc';
+import Mineral, { mineralCheck } from './components/building/Mineral';
+import Stone, { stoneCheck } from './components/building/Stone';
+import Carpet, { carpetCheck } from './components/building/Carpet';
+import Concrete, { concreteCheck } from './components/building/Concrete';
+import Desert, { desertCheck } from './components/building/Desert';
+import Misc, { miscCheck } from './components/building/Misc';
 
 // Import recipes
-import { mineralCheck } from './components/building/Mineral';
-import { stoneCheck } from './components/building/Stone';
-import { carpetCheck } from './components/building/Carpet';
-import { concreteCheck } from './components/building/Concrete';
-import { desertCheck } from './components/building/Desert';
 import { furnaceCheck } from './components/building/Furnace';
-import { miscCheck } from './components/building/Misc';
 
 class App extends Component {
   constructor(props) {
