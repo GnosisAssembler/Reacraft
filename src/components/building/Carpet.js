@@ -1,35 +1,35 @@
 import React, { Component } from 'react';
 
 // Import assets
-import blackCarpet from '../assets/building/carpets/150px-Black_Carpet.png';
-import blueCarpet from '../assets/building/carpets/150px-Blue_Carpet.png';
-import cyanCarpet from '../assets/building/carpets/150px-Cyan_Carpet.png';
-import grayCarpet from '../assets/building/carpets/150px-Gray_Carpet.png';
-import greenCarpet from '../assets/building/carpets/150px-Green_Carpet.png';
-import lightBlueCarpet from '../assets/building/carpets/150px-Light_Blue_Carpet.png';
-import lightGrayCarpet from '../assets/building/carpets/150px-Light_Gray_Carpet.png';
-import magentaCarpet from '../assets/building/carpets/150px-Magenta_Carpet.png';
-import orangeCarpet from '../assets/building/carpets/150px-Orange_Carpet.png';
-import pinkCarpet from '../assets/building/carpets/150px-Pink_Carpet.png';
-import purpleCarpet from '../assets/building/carpets/150px-Purple_Carpet.png';
-import redCarpet from '../assets/building/carpets/150px-Red_Carpet.png';
-import whiteCarpet from '../assets/building/carpets/150px-White_Carpet.png';
-import yellowCarpet from '../assets/building/carpets/150px-Yellow_Carpet.png';
+import blackCarpet from '../../assets/building/carpets/150px-Black_Carpet.png';
+import blueCarpet from '../../assets/building/carpets/150px-Blue_Carpet.png';
+import cyanCarpet from '../../assets/building/carpets/150px-Cyan_Carpet.png';
+import grayCarpet from '../../assets/building/carpets/150px-Gray_Carpet.png';
+import greenCarpet from '../../assets/building/carpets/150px-Green_Carpet.png';
+import lightBlueCarpet from '../../assets/building/carpets/150px-Light_Blue_Carpet.png';
+import lightGrayCarpet from '../../assets/building/carpets/150px-Light_Gray_Carpet.png';
+import magentaCarpet from '../../assets/building/carpets/150px-Magenta_Carpet.png';
+import orangeCarpet from '../../assets/building/carpets/150px-Orange_Carpet.png';
+import pinkCarpet from '../../assets/building/carpets/150px-Pink_Carpet.png';
+import purpleCarpet from '../../assets/building/carpets/150px-Purple_Carpet.png';
+import redCarpet from '../../assets/building/carpets/150px-Red_Carpet.png';
+import whiteCarpet from '../../assets/building/carpets/150px-White_Carpet.png';
+import yellowCarpet from '../../assets/building/carpets/150px-Yellow_Carpet.png';
 
-import blackWool from '../assets/building/wools/150px-Black_Wool.png';
-import blueWool from '../assets/building/wools/150px-Blue_Wool.png';
-import cyanWool from '../assets/building/wools/150px-Cyan_Wool.png';
-import grayWool from '../assets/building/wools/150px-Gray_Wool.png';
-import lightBlueWool from '../assets/building/wools/150px-Light_Blue_Wool.png';
-import lightGrayWool from '../assets/building/wools/150px-Light_Gray_Wool.png';
-import magentaWool from '../assets/building/wools/150px-Magenta_Wool.png';
-import orangeWool from '../assets/building/wools/150px-Orange_Wool.png';
-import pinkWool from '../assets/building/wools/150px-Pink_Wool.png';
-import purpleWool from '../assets/building/wools/150px-Purple_Wool.png';
-import redWool from '../assets/building/wools/150px-Red_Wool.png';
-import whiteWool from '../assets/building/wools/150px-White_Wool.png';
-import yellowWool from '../assets/building/wools/150px-Yellow_Wool.png';
-import emptyBlock from '../img/150px-Empty-Block.png';
+import blackWool from '../../assets/building/wools/150px-Black_Wool.png';
+import blueWool from '../../assets/building/wools/150px-Blue_Wool.png';
+import cyanWool from '../../assets/building/wools/150px-Cyan_Wool.png';
+import grayWool from '../../assets/building/wools/150px-Gray_Wool.png';
+import lightBlueWool from '../../assets/building/wools/150px-Light_Blue_Wool.png';
+import lightGrayWool from '../../assets/building/wools/150px-Light_Gray_Wool.png';
+import magentaWool from '../../assets/building/wools/150px-Magenta_Wool.png';
+import orangeWool from '../../assets/building/wools/150px-Orange_Wool.png';
+import pinkWool from '../../assets/building/wools/150px-Pink_Wool.png';
+import purpleWool from '../../assets/building/wools/150px-Purple_Wool.png';
+import redWool from '../../assets/building/wools/150px-Red_Wool.png';
+import whiteWool from '../../assets/building/wools/150px-White_Wool.png';
+import yellowWool from '../../assets/building/wools/150px-Yellow_Wool.png';
+import emptyBlock from '../../img/150px-Empty-Block.png';
 
 export default class Carpet extends Component {
     render() {

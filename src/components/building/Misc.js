@@ -1,18 +1,13 @@
-/* eslint-disable no-useless-constructor */
 import React, { Component } from 'react'
 
-import melon from '../assets/building/misc/150px-Melon.png';
-import melonSlice from '../assets/materials/150px-Melon_Slice.png';
+import melon from '../../assets/building/misc/150px-Melon.png';
+import melonSlice from '../../assets/materials/150px-Melon_Slice.png';
 
 export default class Misc extends Component {
-    constructor(props) {
-        super(props);
-    }
-
     render() {
         return (
             <div>
-                <img src={melon} alt="melon" width="36px;" id="test" onClick={this.props.handleRecipeChange}/>
+                <img src={melon} alt="melon" width="36px;" id="6-melon" onClick={this.props.handleRecipeChange}/>
             </div>
         )
     }
@@ -25,7 +20,7 @@ export default class Misc extends Component {
  */
 export function miscCheck(itemPressed) {
 
-    if (itemPressed==="test") {
+    if (itemPressed==="6-melon") {
         return [melonSlice,melonSlice,melonSlice,melonSlice,melonSlice,melonSlice,melonSlice,melonSlice,melonSlice,melon];
     } 
 }

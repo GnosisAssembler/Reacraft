@@ -1,16 +1,16 @@
 import React, { Component } from 'react'
 
 // Import assets
-import goldBlock from '../assets/building/minerals/150px-Block_of_Gold.png';
-import ironBlock from '../assets/building/minerals/150px-Block_of_Iron.png';
-import diamondBlock from '../assets/building/minerals/150px-Block_of_Diamond.png';
-import emeraldBlock from '../assets/building/minerals/150px-Block_of_Emerald.png';
-import lapisBlock from '../assets/building/minerals/150px-Lapis_Lazuli_Block.png';
-import goldIngot from '../assets/materials/150px-Gold_Ingot.png';
-import ironIngot from '../assets/materials/150px-Iron_Ingot.png';
-import diamondIngot from '../assets/materials/150px-Diamond.png';
-import emeraldIngot from '../assets/materials/150px-Emerald.png';
-import lapisIngot from '../assets/materials/150px-Lapis_Lazuli.png';
+import goldBlock from '../../assets/building/minerals/150px-Block_of_Gold.png';
+import ironBlock from '../../assets/building/minerals/150px-Block_of_Iron.png';
+import diamondBlock from '../../assets/building/minerals/150px-Block_of_Diamond.png';
+import emeraldBlock from '../../assets/building/minerals/150px-Block_of_Emerald.png';
+import lapisBlock from '../../assets/building/minerals/150px-Lapis_Lazuli_Block.png';
+import goldIngot from '../../assets/materials/150px-Gold_Ingot.png';
+import ironIngot from '../../assets/materials/150px-Iron_Ingot.png';
+import diamondIngot from '../../assets/materials/150px-Diamond.png';
+import emeraldIngot from '../../assets/materials/150px-Emerald.png';
+import lapisIngot from '../../assets/materials/150px-Lapis_Lazuli.png';
 
 export default class Mineral extends Component {
 

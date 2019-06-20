@@ -5,22 +5,21 @@ import './App.css';
 import CraftingTable from './components/crafting/CraftingTable';
 
 // Import category Components
-import Mineral from './components/Mineral';
-import Stone from './components/Stone';
-import Carpet from './components/Carpet';
-import Concrete from './components/Concrete';
-import Desert from './components/Desert';
-import Misc from './components/Misc';
+import Mineral from './components/building/Mineral';
+import Stone from './components/building/Stone';
+import Carpet from './components/building/Carpet';
+import Concrete from './components/building/Concrete';
+import Desert from './components/building/Desert';
+import Misc from './components/building/Misc';
 
 // Import recipes
-import { furnaceCheck } from './recipes/furnaceCheck';
-
-import { mineralCheck } from './components/Mineral';
-import { stoneCheck } from './components/Stone';
-import { carpetCheck } from './components/Carpet';
-import { concreteCheck } from './components/Concrete';
-import { desertCheck } from './components/Desert';
-import { miscCheck } from './components/Misc';
+import { mineralCheck } from './components/building/Mineral';
+import { stoneCheck } from './components/building/Stone';
+import { carpetCheck } from './components/building/Carpet';
+import { concreteCheck } from './components/building/Concrete';
+import { desertCheck } from './components/building/Desert';
+import { furnaceCheck } from './components/building/Furnace';
+import { miscCheck } from './components/building/Misc';
 
 class App extends Component {
   constructor(props) {
@@ -44,8 +43,8 @@ class App extends Component {
     this.handleRecipe = this.handleRecipe.bind(this);
   }
 
-  // Change the state at once
-  changeState(recipeCheck, isFurnaceTable) {
+  // Change the state for classic recipes
+  changeStateClassic(recipeCheck, isFurnaceTable) {
     // Set state
     this.setState({
       item1: recipeCheck[0],
@@ -62,6 +61,17 @@ class App extends Component {
     });
   }
 
+  // Change the state for furnace recipes
+  changeStateFurnace(recipeCheck, isFurnaceTable) {
+    // Set state
+    this.setState({
+      item1: recipeCheck[0],
+      item2: recipeCheck[1],
+      result: recipeCheck[2], 
+      isFurnace: isFurnaceTable
+    });
+  }
+
   // handleRecipe event
   handleRecipe(e) {
     const id = e.target.id; //get id of image clicked
@@ -70,38 +80,37 @@ class App extends Component {
     if(id.substring(0,1)==="1") {
       // call mineralCheck
       const check = mineralCheck(id);
-      this.changeState(check, false);
+      this.changeStateClassic(check, false);
       
     } else if(id.substring(0,1)==="2") {
       // call stoneCheck
       const check = stoneCheck(id);
-      this.changeState(check, false);
+      this.changeStateClassic(check, false);
 
     } else if (id.substring(0,1)==="f") {
       // call furnaceCheck
       const check = furnaceCheck(id);
-      this.changeState(check, true);
+      this.changeStateFurnace(check, true);
 
     } else if(id.substring(0,1)==="3") {
       // call carpetCheck
       const check = carpetCheck(id);
-      this.changeState(check, false);
+      this.changeStateClassic(check, false);
 
     } else if(id.substring(0,1)==="4") {
       // call concreteCheck
       const check = concreteCheck(id);
-      this.changeState(check, false);
+      this.changeStateClassic(check, false);
 
     } else if(id.substring(0,1)==="5") {
       // call desertCheck
       const check = desertCheck(id);
-      this.changeState(check, false);
+      this.changeStateClassic(check, false);
 
-      //? TEST MISC COMPONENT
-    } else if(id==="test") {
-       // call miscCheck
-       const check = miscCheck(id);
-       this.changeState(check, false);
+    } else if(id.substring(0,1)==="6") {
+        // call miscCheck
+        const check = miscCheck(id);
+        this.changeStateClassic(check, false);
     } 
     
   }
@@ -142,34 +151,17 @@ class App extends Component {
 
         {/**Each item has a unique id with the number(or letter) of its category in front of it */}
         <h3>Minerals</h3>
-        <Mineral 
-          handleRecipeChange={this.handleRecipe}
-        />
-
+        <Mineral handleRecipeChange={this.handleRecipe}/>
         <h3>Stone</h3>
-        <Stone 
-          handleRecipeChange={this.handleRecipe}
-        />
-
+        <Stone handleRecipeChange={this.handleRecipe}/>
         <h3>Carpets</h3>
-        <Carpet 
-          handleRecipeChange={this.handleRecipe}
-        />
-
+        <Carpet handleRecipeChange={this.handleRecipe}/>
         <h3>Concrete</h3>
-        <Concrete 
-          handleRecipeChange={this.handleRecipe}
-        />
-
+        <Concrete handleRecipeChange={this.handleRecipe}/>
         <h3>Desert</h3>
-        <Desert 
-          handleRecipeChange={this.handleRecipe}
-        />
-
-        <h3>TEST MISC COMPONENT</h3>
-        <Misc 
-          handleRecipeChange={this.handleRecipe}
-        />
+        <Desert handleRecipeChange={this.handleRecipe}/>
+        <h3>Misc</h3>
+        <Misc handleRecipeChange={this.handleRecipe}/>
       
       </div>
     );
