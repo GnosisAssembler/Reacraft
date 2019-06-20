@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 
+// Import assets
 import sandstone from '../../assets/building/dessert/150px-Sandstone.png';
 import chiseledSandstone from '../../assets/building/dessert/150px-Chiseled_Sandstone.png';
 import cutSandstone from '../../assets/building/dessert/150px-Cut_Sandstone.png';

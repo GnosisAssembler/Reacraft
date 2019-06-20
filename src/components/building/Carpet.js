@@ -15,7 +15,6 @@ import purpleCarpet from '../../assets/building/carpets/150px-Purple_Carpet.png'
 import redCarpet from '../../assets/building/carpets/150px-Red_Carpet.png';
 import whiteCarpet from '../../assets/building/carpets/150px-White_Carpet.png';
 import yellowCarpet from '../../assets/building/carpets/150px-Yellow_Carpet.png';
-
 import blackWool from '../../assets/building/wools/150px-Black_Wool.png';
 import blueWool from '../../assets/building/wools/150px-Blue_Wool.png';
 import cyanWool from '../../assets/building/wools/150px-Cyan_Wool.png';

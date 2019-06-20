@@ -17,7 +17,6 @@ import brownConcretePowder from '../../assets/building/concrete/150px-Brown_Conc
 import yellowConcretePowder from '../../assets/building/concrete/150px-Yellow_Concrete_Powder.png';
 import sand from '../../assets/materials/150px-Sand.png';
 import gravel from '../../assets/materials/150px-Gravel.png';
-
 import blackDye from '../../assets/materials/dyes/150px-Black_Dye.png';
 import blueDye from '../../assets/materials/dyes/150px-Blue_Dye.png';
 import cyanDye from '../../assets/materials/dyes/150px-Cyan_Dye.png';

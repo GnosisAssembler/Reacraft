@@ -8,10 +8,10 @@ import FurnaceTable from './FurnaceTable';
 class CraftingTable extends Component {
     render() {
 
-        // render CraftingRows only if state is not empty
+        // render Crafting Tables only if state is not empty
         if (this.props.isStateFull) {
 
-            // render FurnaceTable if the item crafted is a furnace one
+            // render FurnaceTable if the item crafted needs a furnace
             if (this.props.isFurnace) {
                 return (
                     <div className="CraftingTable">

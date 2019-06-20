@@ -5,6 +5,7 @@ import coal from '../../assets/materials/150px-Coal.png';
 import stoneBrickBlock from '../../assets/building/stone/150px-Stone_Bricks.png';
 import crackedStoneBlock from '../../assets/building/stone/150px-Cracked_Stone_Bricks.png';
 
+//! Component temporary unused
 export default class Furnace extends Component {
     render() {
         return (
