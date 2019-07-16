@@ -1,6 +1,6 @@
 # Reacraft
 
-![status in_progress](https://img.shields.io/badge/status-in_progress-brightgreen.svg)
+![status in_progress](https://img.shields.io/badge/status-in_progress-brightgreen.svg?style=flat-square)
 
 > ⛏️ Minecraft crafting guide for 1.14.3 < made with react
 
