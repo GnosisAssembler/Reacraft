@@ -1,10 +1,8 @@
 # Reacraft
 
-![status in_progress](https://img.shields.io/badge/status-in_progress-brightgreen.svg?style=flat-square)
+> ⛏️ Minecraft crafting guide for 1.19.2
 
-> ⛏️ Minecraft crafting guide for 1.14.3 < made with react
-
-![miny](sample/minecraft1.png)
+![miny](github/readme_wallpaper.png)
 
 ## License
 

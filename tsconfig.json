@@ -1,0 +1,41 @@
+{
+	"compilerOptions": {
+		/* Emit */
+		"sourceMap": true,
+		"inlineSources": true,
+		"downlevelIteration": true,
+		"noEmit": true,
+		/* Language and Environment */
+		"target": "es5",
+		"jsx": "react-jsx",
+		"lib": ["dom", "dom.iterable", "esnext"],
+		/* JavaScript Support */
+		"allowJs": true,
+		/* Modules */
+		"baseUrl": "./src",
+		"rootDir": "./src",
+		"module": "esnext",
+		"moduleResolution": "node",
+		"resolveJsonModule": true,
+		"isolatedModules": true,
+		"types": ["@types/moment-duration-format"],
+		/* Interop Constraints */
+		"esModuleInterop": true,
+		"allowSyntheticDefaultImports": true,
+		"forceConsistentCasingInFileNames": true,
+		/* Completeness */
+		"skipLibCheck": false,
+		/* Type Checking */
+		"strict": false,
+		"strictNullChecks": false,
+		"noFallthroughCasesInSwitch": false,
+		"exactOptionalPropertyTypes": false,
+		"noImplicitAny": false,
+		"noImplicitOverride": false,
+		"noImplicitThis": false,
+		"noImplicitReturns": false,
+		/* Projects */
+		"incremental": true
+	},
+	"include": ["src/**/*"]
+}

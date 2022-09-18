@@ -1,0 +1,108 @@
+{
+	"env": {
+		"browser": true,
+		"es2021": true
+	},
+	"extends": ["standard", "plugin:react/recommended", "plugin:react-hooks/recommended", "plugin:css-modules/recommended"],
+	"parser": "@typescript-eslint/parser",
+	"parserOptions": {
+		"ecmaFeatures": {
+			"jsx": true
+		},
+		"ecmaVersion": "latest",
+		"sourceType": "module"
+	},
+	"settings": {
+		"react": {
+			"version": "detect"
+		}
+	},
+	"plugins": ["react", "import", "@typescript-eslint", "css-modules"],
+	"rules": {
+		"react/prop-types": 0,
+		"react/react-in-jsx-scope": 0,
+		"arrow-body-style": ["warn", "always"],
+		"brace-style": [
+			"error",
+			"1tbs",
+			{
+				"allowSingleLine": true
+			}
+		],
+		"comma-spacing": "error",
+		"comma-style": "error",
+		"curly": ["error", "multi-line", "consistent"],
+		"dot-location": ["error", "property"],
+		"handle-callback-err": "off",
+		"indent": ["error", "tab"],
+		"no-tabs": [0],
+		"max-nested-callbacks": [
+			"error",
+			{
+				"max": 4
+			}
+		],
+		"max-statements-per-line": [
+			"error",
+			{
+				"max": 2
+			}
+		],
+		"no-console": "off",
+		"no-empty-function": "error",
+		"no-floating-decimal": "error",
+		"no-inline-comments": "warn",
+		"no-lonely-if": "error",
+		"no-multi-spaces": "error",
+		"no-multiple-empty-lines": [
+			"error",
+			{
+				"max": 2,
+				"maxEOF": 1,
+				"maxBOF": 0
+			}
+		],
+		"no-shadow": [
+			"error",
+			{
+				"allow": ["err", "resolve", "reject"]
+			}
+		],
+		"eqeqeq": "warn",
+		"camelcase": "warn",
+		"no-unused-vars": "off",
+		"dot-notation": "off",
+		"no-trailing-spaces": ["error"],
+		"no-var": "error",
+		"object-curly-spacing": ["error", "always"],
+		"prefer-const": "error",
+		"quotes": ["warn", "single"],
+		"semi": ["error", "always"],
+		"space-before-blocks": "error",
+		"space-before-function-paren": [0],
+		"space-in-parens": "error",
+		"space-infix-ops": "error",
+		"space-unary-ops": "error",
+		"spaced-comment": "error",
+		"import/order": [
+			"warn",
+			{
+				"groups": ["builtin", "external", "internal"],
+				"pathGroups": [
+					{
+						"pattern": "react",
+						"group": "external",
+						"position": "before"
+					}
+				],
+				"pathGroupsExcludedImportTypes": ["react"],
+				"newlines-between": "always",
+				"alphabetize": {
+					"order": "asc",
+					"caseInsensitive": true
+				}
+			}
+		],
+		"yoda": "error"
+	}
+}

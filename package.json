@@ -1,31 +1,100 @@
 {
-  "name": "crafting-guide",
-  "version": "0.1.0",
-  "private": true,
-  "dependencies": {
-    "react": "^16.8.6",
-    "react-dom": "^16.8.6",
-    "react-scripts": "3.0.1"
-  },
-  "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
-  },
-  "eslintConfig": {
-    "extends": "react-app"
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
-  }
+	"name": "reacraft",
+	"version": "0.0.1",
+	"private": true,
+	"dependencies": {
+		"@chakra-ui/react": "^2.3.1",
+		"@dnd-kit/core": "^6.0.5",
+		"@emotion/react": "^11.9.0",
+		"@emotion/styled": "^11.8.1",
+		"@fortawesome/fontawesome-svg-core": "^6.1.1",
+		"@fortawesome/free-brands-svg-icons": "^6.1.1",
+		"@fortawesome/free-solid-svg-icons": "^6.1.1",
+		"@fortawesome/react-fontawesome": "^0.2.0",
+		"@mui/icons-material": "^5.8.2",
+		"@mui/material": "^5.8.2",
+		"@mui/styles": "^5.8.0",
+		"@primer/react": "^35.8.0",
+		"axios": "^0.27.2",
+		"classnames": "^2.3.1",
+		"evergreen-ui": "^6.10.3",
+		"framer-motion": "^7.2.1",
+		"moment": "^2.29.3",
+		"moment-duration-format": "^2.3.2",
+		"react": "^18.0.0",
+		"react-dom": "^18.0.0",
+		"react-error-boundary": "^3.1.4",
+		"react-icons": "^4.4.0",
+		"react-query": "^3.39.1",
+		"react-router-dom": "^6.3.0",
+		"sass": "^1.52.3",
+		"styled-components": "^5.3.5",
+		"zustand": "^4.1.1"
+	},
+	"devDependencies": {
+		"@types/moment-duration-format": "^2.2.3",
+		"@types/node": "^16.11.38",
+		"@types/react": "^18.0.14",
+		"@types/react-dom": "^18.0.5",
+		"@typescript-eslint/eslint-plugin": "^5.27.1",
+		"@typescript-eslint/parser": "^5.27.1",
+		"cz-conventional-changelog": "^3.3.0",
+		"eslint-config-standard": "^17.0.0",
+		"eslint-plugin-css-modules": "^2.11.0",
+		"eslint-plugin-import": "^2.26.0",
+		"eslint-plugin-n": "^15.2.1",
+		"eslint-plugin-promise": "^6.0.0",
+		"eslint-plugin-react": "^7.30.0",
+		"eslint-plugin-react-hooks": "^4.5.0",
+		"eslint-plugin-storybook": "^0.5.12",
+		"husky": "^8.0.1",
+		"lint-staged": "^13.0.2",
+		"prettier": "^2.1.2",
+		"react-scripts": "5.0.0",
+		"standard-version": "^9.5.0",
+		"stream": "^0.0.2",
+		"typescript": "^4.7.3"
+	},
+	"scripts": {
+		"start": "react-scripts start",
+		"build": "react-scripts build",
+		"test": "react-scripts test",
+		"eject": "react-scripts eject",
+		"commit": "git add . && cz",
+		"format": "prettier --write \"src/**/*.ts\" \"src/**/*.tsx\"",
+		"lint": "eslint src/**/*.{tsx,ts} --quiet --cache",
+		"first-release": "standard-version -- --first-release",
+		"release": "standard-version",
+		"release:minor": "standard-version --release-as minor",
+		"release:patch": "standard-version --release-as patch",
+		"release:major": "standard-version --release-as major",
+		"push-tags": "git push --follow-tags origin master",
+		"prepare": "husky install"
+	},
+	"browserslist": {
+		"production": [
+			">0.2%",
+			"not dead",
+			"not op_mini all"
+		],
+		"development": [
+			"last 1 chrome version",
+			"last 1 firefox version",
+			"last 1 safari version"
+		]
+	},
+	"config": {
+		"commitizen": {
+			"path": "./node_modules/cz-conventional-changelog"
+		}
+	},
+	"lint-staged": {
+		"*.{js,jsx,ts,tsx}": [
+			"prettier --write",
+			"eslint --cache --fix"
+		],
+		"*.{json,html,md,yml,css,scss}": [
+			"prettier --write"
+		]
+	}
 }
