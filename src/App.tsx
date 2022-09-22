@@ -36,7 +36,7 @@ const App = () => {
 		<Layout>
 			<ErrorBoundary
 				FallbackComponent={ErrorFallback}
-				// Reset error state and redirect to Home
+				// Reset error state and redirect to Overview
 				onReset={() => {
 					setErrorExists(false);
 					navigate('/');

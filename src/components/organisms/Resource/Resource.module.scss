@@ -1,8 +1,13 @@
-.item {
+.resource {
 	height: 60px;
 	width: 60px;
 	background-color: var(--color-black-500);
 	padding: var(--space-10);
 	border: 1px solid var(--color-black);
 	box-shadow: 5px 5px 20px var(--color-black-400);
+}
+
+.clickable:hover {
+	cursor: pointer;
+	background-color: var(--color-black-600);
 }

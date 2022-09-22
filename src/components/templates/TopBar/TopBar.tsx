@@ -23,7 +23,7 @@ import styles from './TopBar.module.scss';
 
 const pages = [
 	{
-		name: 'Home',
+		name: 'Overview',
 		path: '/'
 	}
 ];

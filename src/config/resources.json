@@ -1,0 +1,109 @@
+{
+	"blocks": [
+		{
+			"natural": [
+				{
+					"soil": [{}]
+				},
+				{
+					"stone": [{}]
+				},
+				{
+					"ore": [{}]
+				},
+				{
+					"liquid": [{}]
+				}
+			]
+		},
+		{
+			"biota": [
+				{
+					"wood": [{}]
+				},
+				{
+					"plant": [{}]
+				},
+				{
+					"fungus": [{}]
+				},
+				{
+					"fauna": [{}]
+				},
+				{
+					"faunalProduct": [{}]
+				},
+				{
+					"algae": [{}]
+				}
+			]
+		},
+		{
+			"building": [
+				{
+					"ornamental": [{}]
+				},
+				{
+					"mineral": [{}]
+				},
+				{
+					"structural": [{}]
+				},
+				{
+					"lighting": [{}]
+				}
+			]
+		},
+		{
+			"utility": [
+				{
+					"interactable": [{}]
+				},
+				{
+					"utilizable": [{}]
+				},
+				{
+					"mechanical": [{}]
+				}
+			]
+		}
+	],
+	"items": [
+		{
+			"rawMaterials": [{}]
+		},
+		{
+			"processed": [{}]
+		},
+		{
+			"seeds": [{}]
+		},
+		{
+			"food": [{}]
+		},
+		{
+			"dyes": [{}]
+		},
+		{
+			"tools": [{}]
+		},
+		{
+			"weapons": [{}]
+		},
+		{
+			"armor": [{}]
+		},
+		{
+			"informationa": [{}]
+		},
+		{
+			"vehicles": [{}]
+		},
+		{
+			"utility": [{}]
+		},
+		{
+			"aesthetic": [{}]
+		}
+	]
+}
