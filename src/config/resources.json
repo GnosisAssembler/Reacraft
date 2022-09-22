@@ -3,36 +3,36 @@
 		{
 			"natural": [
 				{
-					"soil": [
-						{
-							"name": "lapis lazulis",
-							"craftable": true,
-							"type": "crafting",
-							"igredients": [0, 0, "lapis lazulis", 0, 0, "lapis lazulis", 0, 0, "lapis lazulis"],
-							"outputQuantity": 1,
-							"iconUrl": "https://static.wikia.nocookie.net/minecraft_gamepedia/images/4/43/Lapis_Lazuli_JE2_BE2.png",
-							"sector": "blocks",
-							"category": "natural",
-							"subCategory": "soil"
-						},
-						{
-							"name": "gold lazulis",
-							"craftable": true,
-							"type": "crafting",
-							"igredients": [0, 0, "lapis lazulis", 0, 0, "lapis lazulis", 0, 0, "lapis lazulis"],
-							"outputQuantity": 1,
-							"iconUrl": "https://static.wikia.nocookie.net/minecraft_gamepedia/images/4/43/Lapis_Lazuli_JE2_BE2.png",
-							"sector": "blocks",
-							"category": "natural",
-							"subCategory": "soil"
-						}
-					]
+					"soil": [{}]
 				},
 				{
 					"stone": [{}]
 				},
 				{
-					"ore": [{}]
+					"ore": [
+						{
+							"name": "diamond block",
+							"craftable": true,
+							"type": "crafting",
+							"igredients": ["diamond", "diamond", "diamond", "diamond", "diamond", "diamond", "diamond", "diamond", "diamond"],
+							"outputQuantity": 1,
+							"iconUrl": "https://static.wikia.nocookie.net/minecraft_gamepedia/images/c/c8/Block_of_Diamond_JE5_BE3.png",
+							"sector": "blocks",
+							"category": "natural",
+							"subCategory": "ore"
+						},
+						{
+							"name": "iron block",
+							"craftable": true,
+							"type": "crafting",
+							"igredients": ["iron", "iron", "iron", "iron", "iron", "iron", "iron", "iron", "iron"],
+							"outputQuantity": 1,
+							"iconUrl": "https://static.wikia.nocookie.net/minecraft_gamepedia/images/7/7e/Block_of_Iron_JE4_BE3.png",
+							"sector": "blocks",
+							"category": "natural",
+							"subCategory": "ore"
+						}
+					]
 				},
 				{
 					"liquid": [{}]
@@ -80,7 +80,19 @@
 		{
 			"utility": [
 				{
-					"interactable": [{}]
+					"interactable": [
+						{
+							"name": "anvil",
+							"craftable": true,
+							"type": "crafting",
+							"igredients": ["iron block", "iron block", "iron block", "0", "iron", "0", "iron", "iron", "iron"],
+							"outputQuantity": 1,
+							"iconUrl": "https://static.wikia.nocookie.net/minecraft_gamepedia/images/7/71/Broken_Anvil_(N)_BE2.png",
+							"sector": "blocks",
+							"category": "utility",
+							"subCategory": "interactable"
+						}
+					]
 				},
 				{
 					"utilizable": [{}]
@@ -93,7 +105,28 @@
 	],
 	"items": [
 		{
-			"rawMaterials": [{}]
+			"rawMaterials": [
+				{
+					"name": "diamond",
+					"craftable": false,
+					"type": "crafting",
+					"igredients": null,
+					"outputQuantity": 1,
+					"iconUrl": "https://static.wikia.nocookie.net/minecraft_gamepedia/images/a/ab/Diamond_JE3_BE3.png",
+					"sector": "items",
+					"category": "rawMaterials"
+				},
+				{
+					"name": "iron",
+					"craftable": false,
+					"type": "crafting",
+					"igredients": null,
+					"outputQuantity": 1,
+					"iconUrl": "https://static.wikia.nocookie.net/minecraft_gamepedia/images/f/fc/Iron_Ingot_JE3_BE2.png",
+					"sector": "items",
+					"category": "rawMaterials"
+				}
+			]
 		},
 		{
 			"processed": [{}]

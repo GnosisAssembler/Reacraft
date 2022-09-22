@@ -4,7 +4,9 @@ import { devtools, persist } from 'zustand/middleware';
 
 interface craftingStoreState {
 	coordinates: Array<IItem | IBlock>;
+	output: IItem | IBlock;
 	changeCoordinates: (option: Array<IItem | IBlock>) => void;
+	setOutput: (option: IItem | IBlock) => void;
 }
 
 export const useCraftingStore = create<craftingStoreState>()(
@@ -13,10 +15,18 @@ export const useCraftingStore = create<craftingStoreState>()(
 			(set) => {
 				return {
 					coordinates: null,
+					output: null,
 					changeCoordinates: (option: Array<IItem | IBlock>) => {
 						return set(() => {
 							return {
 								coordinates: option
+							};
+						});
+					},
+					setOutput: (option: IItem | IBlock) => {
+						return set(() => {
+							return {
+								output: option
 							};
 						});
 					}

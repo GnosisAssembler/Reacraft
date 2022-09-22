@@ -15,8 +15,9 @@ const Box = ({ resource, className }: BoxProps) => {
 	const craftingStore = useCraftingStore();
 
 	const handleCrafting = () => {
-		const results = searchResource(resource.igredients, resource);
+		const results = searchResource(resource?.igredients, resource);
 		craftingStore.changeCoordinates(results);
+		craftingStore.setOutput(resource);
 	};
 
 	const handleSmelting = () => {
