@@ -11,13 +11,8 @@ export const useSmeltingStore = create<smeltingStoreState>()(
 	devtools(
 		persist(
 			(set) => {
-				const initialState = {
-					fuel: 'coal' as 'coal',
-					output: ''
-				};
-
 				return {
-					furnace: initialState,
+					furnace: null,
 					changeFurnace: (option: ISmelting) => {
 						return set(() => {
 							return {

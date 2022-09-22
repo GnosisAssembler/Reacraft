@@ -3,13 +3,10 @@ import { useEffect, useState } from 'react';
 import { Alert } from '@mui/material';
 import Layout from 'components/templates/Layout/Layout';
 import { ErrorBoundary } from 'react-error-boundary';
-import { useNavigate } from 'react-router-dom';
 
 import RouteMain from './routes';
 
 const App = () => {
-	const navigate = useNavigate();
-
 	const [errorExists, setErrorExists] = useState(false);
 
 	const ErrorFallback = ({ error, resetErrorBoundary }) => {
@@ -39,7 +36,6 @@ const App = () => {
 				// Reset error state and redirect to Overview
 				onReset={() => {
 					setErrorExists(false);
-					navigate('/');
 				}}
 				resetKeys={[errorExists]}
 			>

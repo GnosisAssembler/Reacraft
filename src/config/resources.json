@@ -3,7 +3,30 @@
 		{
 			"natural": [
 				{
-					"soil": [{}]
+					"soil": [
+						{
+							"name": "lapis lazulis",
+							"craftable": true,
+							"type": "crafting",
+							"igredients": [0, 0, "lapis lazulis", 0, 0, "lapis lazulis", 0, 0, "lapis lazulis"],
+							"outputQuantity": 1,
+							"iconUrl": "https://static.wikia.nocookie.net/minecraft_gamepedia/images/4/43/Lapis_Lazuli_JE2_BE2.png",
+							"sector": "blocks",
+							"category": "natural",
+							"subCategory": "soil"
+						},
+						{
+							"name": "gold lazulis",
+							"craftable": true,
+							"type": "crafting",
+							"igredients": [0, 0, "lapis lazulis", 0, 0, "lapis lazulis", 0, 0, "lapis lazulis"],
+							"outputQuantity": 1,
+							"iconUrl": "https://static.wikia.nocookie.net/minecraft_gamepedia/images/4/43/Lapis_Lazuli_JE2_BE2.png",
+							"sector": "blocks",
+							"category": "natural",
+							"subCategory": "soil"
+						}
+					]
 				},
 				{
 					"stone": [{}]

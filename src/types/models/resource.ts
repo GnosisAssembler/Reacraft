@@ -1,11 +1,11 @@
 export interface IResource {
-	id: number;
 	name: string;
 	craftable: boolean;
 	type: 'crafting' | 'smelting';
 	igredients: null | Array<string>;
 	outputQuantity: number;
 	iconUrl: string;
+	sector: 'blocks' | 'items';
 }
 
 export interface IBlock extends IResource {

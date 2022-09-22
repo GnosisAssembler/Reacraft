@@ -11,20 +11,8 @@ export const useCraftingStore = create<craftingStoreState>()(
 	devtools(
 		persist(
 			(set) => {
-				const initialStore = {
-					id: 0,
-					name: '',
-					craftable: false,
-					type: 'crafting' as 'crafting',
-					igredients: null,
-					outputQuantity: 0,
-					iconUrl: '',
-					category: 'natural' as 'natural',
-					subCategory: 'soil' as 'soil'
-				};
-
 				return {
-					coordinates: [initialStore],
+					coordinates: null,
 					changeCoordinates: (option: Array<IItem | IBlock>) => {
 						return set(() => {
 							return {
