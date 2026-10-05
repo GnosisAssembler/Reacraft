@@ -1,11 +1,9 @@
-# dependencies
-/node_modules
-
-# production
-/build
-
-# cache
+node_modules
+.next
+out
+.cache
+coverage
 .eslintcache
-
-# misc
 .DS_Store
+*.tsbuildinfo
+.env*.local
